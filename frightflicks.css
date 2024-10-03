@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/csz5ekm.css");
+@import url("https://use.typekit.net/csz5ekm.css");
 body{
   padding: 0;
   margin: 0;
@@ -77,32 +78,29 @@ main {/* Source: https://www.w3schools.com/cssref/pr_grid-template-columns.php *
 }
 
 #episode-page section {
-  margin: 40px; /* Margin between sections */
+  margin: 40px; 
   padding: 20px;
   background-color: rgb(143, 139, 139);
   border-radius: 5px; /* Rounded corners */
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 #episode-page h1{
-  color: #292929; /* Consistent text color for headers */
+  color: #292929; 
   font-size: 2rem;
   align-items: center;
   font-family: "cc-incy-wincy-spider-web", sans-serif;
 }
 
 h1{
-  color: #292929; /* Consistent text color for headers */
+  color: #292929; 
   font-size: 2rem;
   align-items: center;
 }
 
 img {
-  width: 10em; /* Make images responsive */
-  margin: 10px ; /* Margin around images */
-  border-radius: 5px; /* Rounded corners for images */
+  width: 10em; 
+  margin: 10px ; 
+  border-radius: 5px; 
 }
 
 button {
@@ -141,9 +139,8 @@ h2{
   font-family: Arial, sans-serif;
   color: hsl(0, 0%, 100%);
   line-height: 1.6;
-  margin: 30px; /* Margin between sections */
+  margin: 30px; 
   padding: 10px;
- /* background-color: rgba(86, 84, 84, 0.5); */
   background: linear-gradient(
     rgba(86,86,86,0.9), rgb(65, 65, 65,0.1)
   );
@@ -163,9 +160,17 @@ h2{
   width: 150px; 
   height: auto;
 }
+
+.content-section p{
+  font-family: "totally-gothic-wide-caps", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
 .text {max-width: 600px;}
 
-.logo {
+.logoZoom {
   width: 100px;
   height: 100px;
   animation: zoomInOut 7s infinite;
@@ -191,18 +196,18 @@ h2{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 70vh; /* Ensures the main element takes the full viewport height */
+  height: 70vh; 
 }
 
 .content-wrapper {
   text-align: center;
 }
 .content-wrapper img {
-  max-width: 90%; /* Ensures the image is responsive */
+  max-width: 90%; 
   height: auto;
 }
 .content-wrapper p {
-  margin-top: 20px; /* Adds space between the image and the text */
+  margin-top: 20px; 
 }
 
 
@@ -216,7 +221,7 @@ h2{
   }
 }
 
-.flicker {
+.flicker { 
   animation: flicker 1.2s infinite;
   width: 100%;
   height: 20vh;
