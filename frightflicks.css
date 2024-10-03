@@ -80,12 +80,12 @@ main {/* Source: https://www.w3schools.com/cssref/pr_grid-template-columns.php *
 #episode-page section {
   margin: 40px; 
   padding: 20px;
-  background-color: rgb(143, 139, 139);
+  background-color: rgba(143, 139, 139, 0.75);
   border-radius: 5px; /* Rounded corners */
 }
 
 #episode-page h1{
-  color: #292929; 
+  color: #200000dd; 
   font-size: 2rem;
   align-items: center;
   font-family: "cc-incy-wincy-spider-web", sans-serif;
@@ -118,7 +118,7 @@ button:hover {
 
 #about-us-page h1{
   font-family: Arial, sans-serif;
-  color: #eee5e5;
+  color: #200000dd;
   font-size: 1.5rem;
   text-align: center; 
   font-family: "cc-incy-wincy-spider-web", sans-serif;
@@ -152,17 +152,19 @@ h2{
   display: flex;
   flex-direction: column;
   gap: 1px;}
-.image-text, .text-image {
+.image-text, .text-image, .small-image-text, .text-small-image {
   display:flex; 
   align-items: center;
   gap: 20px;}
 .image-text img, .text-image img {
+  width: 250px; 
+  height: auto;}
+.small-image-text img, .text-small-image img {
   width: 150px; 
-  height: auto;
-}
+  height: auto;}
 
 .content-section p{
-  font-family: "totally-gothic-wide-caps", sans-serif;
+
   font-weight: 400;
   font-style: normal;
   font-size: larger;
@@ -244,4 +246,19 @@ h2{
 
 audio {
   display: none;
+}
+
+/*https://dev.to/devlawrence/creating-an-image-expand-gallery-67i*/
+.image-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.expandable-image {
+  width: 50%;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .expandable-image {
+  transform: scale(1.3); 
 }
