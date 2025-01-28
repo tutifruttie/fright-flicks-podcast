@@ -55,9 +55,8 @@ header {
 
 img{
   width: 10em; 
-  margin: 10px;
+  margin: 1em;
 }
-
 
 a {
   color: white;
@@ -73,22 +72,33 @@ a:hover {
 main {/* Source: https://www.w3schools.com/cssref/pr_grid-template-columns.php */
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 30px; 
-  padding: 50px;
+  margin-top: 2em; 
+  padding: 3.5em;
 }
 
 #episode-page section {
-  margin: 40px; 
-  padding: 20px;
+  margin: 4em; 
+  padding: 1.5em;
   background-color: rgba(143, 139, 139, 0.75);
-  border-radius: 5px; /* Rounded corners */
+  border-radius: .5em; /* Rounded corners */
 }
 
-#episode-page h1{
+.episode-page h2, .about-us-page h2 {
   color: #200000dd; 
   font-size: 2rem;
   align-items: center;
-  font-family: "cc-incy-wincy-spider-web", sans-serif;
+  background-color: rgba(245, 245, 245, 0.5);
+  padding: .5em
+}
+
+.una, .lucius {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.una img {
+  height: auto;
 }
 
 h1{
@@ -99,15 +109,15 @@ h1{
 
 img {
   width: 10em; 
-  margin: 10px ; 
-  border-radius: 5px; 
+  margin: 1em; 
+  border-radius: .5em; 
 }
 
 button {
-  margin: 10px;
-  padding: 10px;
+  margin: 1em;
+  padding: 1em;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: .5em;
   width: 10rem;
   transition: background-color 350ms ease;
 }
@@ -125,56 +135,76 @@ button:hover {
   font-weight: 700;
   font-style: normal;
 }
- 
-
-h2{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #070606;
-  font-size: 2rem;
-  text-align: center; 
-}
 
 #about-us-page section{
   display:flex;
   font-family: Arial, sans-serif;
   color: hsl(0, 0%, 100%);
   line-height: 1.6;
-  margin: 30px; 
-  padding: 10px;
-  background: linear-gradient(
-    rgba(86,86,86,0.9), rgb(65, 65, 65,0.1)
-  );
-  border-radius: 5px; /* Rounded corners */
-  
+  margin: 2em; 
+  padding: 1em;
+  background: linear-gradient(rgba(86,86,86,0.9), rgb(65, 65, 65,0.1));
+  border-radius: .5em; /* Rounded corners */
 }
 
-.content-section{  
+.about-us-page main section {
   display: flex;
-  flex-direction: column;
-  gap: 1px;}
-.image-text, .text-image, .small-image-text, .text-small-image {
-  display:flex; 
+  flex-wrap: wrap;
+  margin: 0 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
   align-items: center;
-  gap: 20px;}
-.image-text img, .text-image img {
-  width: 250px; 
-  height: auto;}
-.small-image-text img, .text-small-image img {
-  width: 150px; 
-  height: auto;}
+}
 
-.content-section p{
+.about-us-page main section p {
+  background-color: rgba(245, 245, 245, 0.5);
+  padding: 2em;
+}
 
+.about-us-page main section:nth-child(2) article {
+  display: flex;
+  align-items: center;
+}
+
+.episode-page main section {  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.episode-page main section article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.episode-page main section img {
+  width: 16em;
+  height: auto;
+}
+
+.episode-page main section p {
+  background-color: rgba(245, 245, 245, 0.5);
+  padding: 1.5em;
   font-weight: 400;
   font-style: normal;
   font-size: larger;
 }
 
-.text {max-width: 600px;}
+.content-section h2 {
+  background-color: rgba(245, 245, 245, 0.5);
+  padding: .5em;
+}
 
-.logoZoom {
-  width: 100px;
-  height: 100px;
+.image-text p {
+  max-width: 50em;
+}
+
+.flicker_body main section img {
+  width: 5em;
+  height: 5em;
   animation: zoomInOut 7s infinite;
 }
 
@@ -189,11 +219,11 @@ h2{
 
 .content {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.5em;
 }
 
-.unique-main {
-  padding: 20px;
+.flicker_body main {
+  padding: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,18 +231,18 @@ h2{
   height: 70vh; 
 }
 
-.content-wrapper {
+.flicker_body main section {
   text-align: center;
 }
-.content-wrapper img {
+
+.flicker_body main section img {
   max-width: 90%; 
   height: auto;
 }
-.content-wrapper p {
-  margin-top: 20px; 
+
+.flicker_body main section p {
+  margin-top: 1.5em; 
 }
-
-
 
 @keyframes flicker {
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -249,16 +279,16 @@ audio {
 }
 
 /*https://dev.to/devlawrence/creating-an-image-expand-gallery-67i*/
-.image-container {
+.flicker_body main a {
   display: inline-block;
   overflow: hidden;
 }
 
-.expandable-image {
+.flicker_body main a img {
   width: 50%;
   transition: transform 0.3s ease;
 }
 
-.image-container:hover .expandable-image {
+.image-container:hover .flicker_body main a img {
   transform: scale(1.3); 
 }
